@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NewAdComponent } from './new-ad/new-ad.component';
 
+import { NewAdRoutingModule } from './new-ad-routing.module';
+import { NewAdComponent } from './new-ad/new-ad.component';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { NewAdComponent } from './new-ad/new-ad.component';
     NewAdComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NewAdRoutingModule
   ]
 })
 export class NewAdModule { }
